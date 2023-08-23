@@ -1,0 +1,16 @@
+trigger:
+  tags:
+    include:
+    - release.*
+
+pr:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello India!
+  displayName: 'Hello'
